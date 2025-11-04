@@ -66,16 +66,22 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color) !important;
 }
 
+@media (min-width: 992px){
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+}
+
 .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
     background: var(--primary-color);
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
 }
 
 .nav-link:hover::after {
@@ -453,7 +459,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .description-list li::before {
-    content: '🕇';
+    content: '✞';
     position: absolute;
     left: 0;
     color: var(--primary-color);
