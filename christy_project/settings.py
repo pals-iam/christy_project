@@ -19,14 +19,12 @@ SECRET_KEY = 'django-insecure-change-this-in-production-!'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    ALLOWED_HOSTS = [
     '127.0.0.1', 
     'localhost', 
     '.herokuapp.com', 
     'christianacatherine.co.uk', 
     'www.christianacatherine.co.uk'
     ]
-]
 
 
 # Application definition
