@@ -1,0 +1,1 @@
+web: gunicorn christy_project.wsgi --log-file - 

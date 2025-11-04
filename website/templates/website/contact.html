@@ -1,0 +1,157 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Contact - Christiana Catherine White{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header py-5 mt-4 mt-md-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h1 class="page-title">Get in Touch</h1>
+                <p class="page-subtitle">I'd Love to Hear From You</p>
+                <div class="header-decoration mt-4">
+                    <i class="bi bi-envelope-heart-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="contact-info">
+                            <h2 class="contact-title">Let's Connect</h2>
+                            <p class="contact-text">
+                                I'm always encouraged to hear from readers, fellow believers, and those who are walking 
+                                their own journey of faith. Whether you have questions, want to share your testimony, 
+                                need prayer, or simply want to connect, I'd love to hear from you.
+                            </p>
+                            <p class="contact-text">
+                                Your stories, testimonies, and words of encouragement are a blessing to me, and I'm grateful 
+                                for the opportunity to be part of this community of believers.
+                            </p>
+                            
+                            <div class="contact-details mt-5">
+                                <div class="contact-item mb-4">
+                                    <div class="contact-item-icon">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </div>
+                                    <div class="contact-item-content">
+                                        <h5 class="contact-item-title">Email</h5>
+                                        <p class="contact-item-text">info@christianacatherine.co.uk</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item mb-4">
+                                    <div class="contact-item-icon">
+                                        <i class="bi bi-facebook"></i>
+                                    </div>
+                                    <div class="contact-item-content">
+                                        <h5 class="contact-item-title">Social Media</h5>
+                                        <p class="contact-item-text">Connect on Facebook and Instagram</p>
+                                         <div class="social-links mt-4">
+                                            <a href="https://www.tiktok.com/@christiana__catherine?_r=1&_t=ZN-917UzlAIzRe" target="_blank" class="social-link me-3"><i class="bi bi-tiktok"></i></a>
+                                            <a href="https://www.instagram.com/christiana_catherine?igsh=MXhrdXludzlwbDVicQ%3D%3D&utm_source=qr" target="_blank" class="social-link me-3"><i class="bi bi-instagram"></i></a>
+                                            <a href="https://www.facebook.com/profile.php?id=61562583973440" target="_blank" class="social-link me-3"><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verse-box-contact mt-5">
+                                <p class="verse-text-small">
+                                    "Therefore encourage one another and build each other up, just as in fact you are doing."
+                                </p>
+                                <p class="verse-reference-small">1 Thessalonians 5:11 (NIV)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="contact-form-wrapper">
+                            <h3 class="form-title">Send a Message</h3>
+                            <form id="contactForm" class="contact-form">
+                                {% csrf_token %}
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
+                                <div id="formMessage" class="mt-3"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Prayer Request Section -->
+<section class="prayer-section py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="prayer-box">
+                    <i class="bi bi-hand-index-thumb-fill prayer-icon"></i>
+                    <h2 class="prayer-title">Prayer Requests</h2>
+                    <p class="prayer-text">
+                        If you have a prayer request, please know that I will be praying for you. God hears our prayers, 
+                        and there is power when we come together in prayer and agreement. You are not alone in your journey.
+                    </p>
+                    <p class="prayer-text">
+                        Feel free to share your prayer requests in your message, and I will lift them up to the Lord.
+                    </p>
+                    <p class="prayer-verse">
+                        "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, 
+                        present your requests to God."
+                    </p>
+                    <p class="verse-reference">Philippians 4:6 (NIV)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonies Section -->
+<section class="testimonies-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title">Share Your Testimony</h2>
+                <p class="section-text">
+                    I'm always blessed to hear how God is working in the lives of others. If you'd like to share your own 
+                    testimony of God's faithfulness, victory, or how He's worked in your life, please include it in your message. 
+                    Your story matters and has the power to encourage others!
+                </p>
+                <p class="section-text">
+                    "They triumphed over him by the blood of the Lamb and by the word of their testimony." 
+                    <span class="verse-reference">Revelation 12:11 (NIV)</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
