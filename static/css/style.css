@@ -150,14 +150,14 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(0deg) scale(1.05);
 }
 
-.cross-decoration {
+/* .cross-decoration {
     position: absolute;
     top: -20px;
     right: -20px;
     font-size: 4rem;
     color: var(--primary-color);
     opacity: 0.3;
-}
+} */
 
 .scroll-indicator {
     position: absolute;
