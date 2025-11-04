@@ -22,7 +22,7 @@ body {
     font-family: 'Lora', 'Cormorant Garamond', serif;
     color: var(--text-dark);
     line-height: 1.7;
-    padding-top: 76px;
+    padding-top: 15px; /*67 original*/ 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .description-list li::before {
-    content: '✝';
+    content: '🕇';
     position: absolute;
     left: 0;
     color: var(--primary-color);
@@ -744,3 +744,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(0);
 }
 
+/* My Code */
+.icons {
+    color: var(--secondary-color);
+}
