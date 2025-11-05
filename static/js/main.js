@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollRevealElements = document.querySelectorAll('.scroll-reveal, .pillar-card, .theme-card, .testimonial-card, .verse-item');
     
     const observerOptions = {
-        threshold: 0.1,
+        threshold: 0.8, /*0.1 originally*/
         rootMargin: '0px 0px -50px 0px'
     };
 
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Console message
-    console.log('%c✝ Welcome to Christiana Catherine White\'s Website ✝', 'color: #8B6F7E; font-size: 20px; font-weight: bold;');
-    console.log('%c"Victory in His Blood" - A journey of faith, hope, and redemption', 'color: #6B6B6B; font-size: 14px;');
+    console.log('%c✝ Welcome to Christiana Catherine\'s Website ✝', 'color: #8B6F7E; font-size: 20px; font-weight: bold;');
+    console.log('%c"Pain to Purpose..." - A journey of faith, hope, and redemption', 'color: #6B6B6B; font-size: 14px;');
 });
 
