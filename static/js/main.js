@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollRevealElements = document.querySelectorAll('.scroll-reveal, .pillar-card, .theme-card, .testimonial-card, .verse-item');
     
     const observerOptions = {
-        threshold: 0.8, /*0.1 originally*/
+        threshold: 1.0, /*0.1 originally*/
         rootMargin: '0px 0px -50px 0px'
     };
 
