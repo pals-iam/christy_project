@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Membership Application Received</title>
+  <style>
+    body { font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; padding: 20px; }
+    .container { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; max-width: 600px; margin: auto; }
+    h2 { color: #2c3e50; margin-top: 0; }
+    .highlight { color: #2c3e50; font-weight: bold; }
+    .meta { font-size: 12px; color: #777; }
+    a.button {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #2c3e50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to <span class="highlight">{{company_name}}</span> Membership!</h2>
+    
+    <p>Hi {{ first_name }},</p>
+    <p>We have received your <strong>membership application</strong> and our team is currently reviewing it.</p>
+    <p>You will hear from us within <strong>3–5 business days</strong> regarding the status of your application.</p>
+
+    <p><em>Your application details:</em></p>
+    <ul>
+      <li><strong>Full Name:</strong> {{ user_name }}</li>
+      <li><strong>Email:</strong> {{ user_email }}</li>
+    </ul>
+
+    <p>We’re excited that you want to be part of our community and can’t wait to connect with you.</p>
+    
+    <p>— The {{company_name}} Membership Team</p>
+
+    <hr>
+    <p class="meta">
+      Sent from {{company_name}} • <a href="https://www.antiguabarbudapensioners.org/">Visit our website</a><br>
+      Please reply to this email if you have questions about your application.
+    </p>
+  </div>
+</body>
+</html>

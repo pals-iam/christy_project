@@ -1,0 +1,42 @@
+{% load tz %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Contact Form Submission</title>
+  <style>
+    body { font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; padding: 20px; }
+    .container { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; max-width: 600px; margin: auto; }
+    h2 { color: #2c3e50; margin-top: 0; }
+    .field-label { font-weight: bold; margin-top: 10px; }
+    .meta { font-size: 12px; color: #777; }
+    .message-box { background: #f4f4f4; padding: 10px; border-left: 4px solid #2c3e50; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📩 New Contact Form Submission</h2>
+    
+    <p class="field-label">Name:</p>
+    <p>{{user_name}}</p>
+
+    <p class="field-label">Email:</p>
+    <p><a href="mailto:john@example.com">{{user_email}}</a></p>
+
+    <br>
+    <p class="field-label">Subject:</p>
+    <p>{{user_subject}}</p>
+
+    <p class="field-label">Message:</p>
+    <div class="message-box">
+      {{user_message}}
+    </div>
+
+    <hr>
+    <p class="meta">
+      Submitted at: {% now "Y-m-d H:i" %} UTC-4<br>
+      Source: Website Contact Form
+    </p>
+  </div>
+</body>
+</html>

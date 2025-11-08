@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thanks for Reaching Out</title>
+  <style>
+    body { font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; padding: 20px; }
+    .container { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; max-width: 600px; margin: auto; }
+    h2 { color: #2c3e50; margin-top: 0; }
+    .highlight { color: #2c3e50; font-weight: bold; }
+    .meta { font-size: 12px; color: #777; }
+    a.button {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #2c3e50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Thank You for Contacting <span class="highlight">{{company_name}}</span>!</h2>
+    <p>Hi {{user_name}},</p>
+    <p>We’ve received your message and our support team will get back to you within <strong>1 business day</strong>.</p>
+    
+    <p><em>Your message:</em></p>
+    <blockquote style="border-left: 4px solid #2c3e50; padding-left: 10px; color: #555;">
+      {{user_message}}
+    </blockquote>
+
+    <p>In the meantime, you might find answers on our <a href="https://www.christianacatherine.co.uk/about/">About Page</a>.</p>
+    
+    <p>Thanks again for reaching out,<br>
+    — {{company_name}} Team</p>
+
+    <hr>
+    <p class="meta">
+      Sent from {{company_name}} • <a href="https://www.christianacatherine.co.uk/">Visit our website</a><br>
+      Please reply to this email if you have more details to add.
+    </p>
+  </div>
+</body>
+</html>
