@@ -204,6 +204,11 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 6px 20px rgba(139, 111, 126, 0.4);
 }
 
+.btn-primary:active {
+    --bs-btn-active-bg: var(--rose-gold);
+    --bs-btn-active-border-color: var(--rose-gold);
+}
+
 .btn-outline-primary {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
@@ -215,9 +220,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-outline-primary:hover {
     background: var(--primary-color);
+    border: 2px solid var(--primary-color);
     color: var(--bg-white);
     transform: translateY(-2px);
 }
+
+.btn-outline-primary:active {
+    --bs-btn-active-bg: var(--primary-color);
+    --bs-btn-active-border-color:var(--primary-color);
+}
+
 
 /* Verse Sections */
 /* .verse-section {
