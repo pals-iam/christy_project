@@ -163,6 +163,7 @@ TLDS = {
     # 'US': '.com',
     'GB': '.co.uk',
     'DE': '.de',
+    'AT': '.de',
     'FR': '.fr',
     'ES': '.es',
     'IT': '.it',
