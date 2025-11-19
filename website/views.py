@@ -29,12 +29,15 @@ def contact(request):
 
 def amazon_redirect(request):
     ASIN = 'B0FYZCF7F4'    
-
+    print('STEP 1')
     ip, is_routable = get_client_ip(request)
+    print('STEP 2')
     if is_routable:
+        print('STEP 3')
 
         API_KEY = os.environ['ipgeolocation_apiKey']
         url = f"https://api.ipgeolocation.io/v2/ipgeo?apiKey={API_KEY}&ip={ip}&fields=location"
+        print('STEP 4')
 
         payload = {}
         headers = {}
@@ -44,9 +47,11 @@ def amazon_redirect(request):
         country_code2 = location_data['location']['country_code2']
 
         tld = '.com'
+        print('STEP 5')
 
         if country_code2 in TLDS:
             tld = TLDS[country_code2]
+        print('STEP 6')
     
         target_url = f'https://www.amazon{tld}/dp/{ASIN}'
         return HttpResponseRedirect(target_url)
