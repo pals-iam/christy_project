@@ -38,6 +38,7 @@ def amazon_redirect(request):
         API_KEY = os.environ['ipgeolocation_apiKey']
         url = f"https://api.ipgeolocation.io/v2/ipgeo?apiKey={API_KEY}&ip={ip}&fields=location"
         print('STEP 4')
+        print(API_KEY)
 
         payload = {}
         headers = {}
@@ -46,6 +47,7 @@ def amazon_redirect(request):
         print('STEP 5')
         location_data = json.loads(response.text)
         print('STEP 6')
+        
         print(location_data)
         country_code2 = location_data['location']['country_code2']
 
