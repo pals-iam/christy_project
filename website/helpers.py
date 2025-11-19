@@ -157,3 +157,21 @@ def send_mail(service, message, delete):
         print(delete_message)
 
     return
+
+
+TLDS = {
+    # 'US': '.com',
+    'UK': '.co.uk',
+    'DE': '.de',
+    'FR': '.fr',
+    'ES': '.es',
+    'IT': '.it',
+    'NL': '.nl',
+    'PL': '.pl',
+    'SE': '.se',
+    'BE': '.com.be',
+    'IE': '.ie',
+    'JP': '.co.jp',
+    'CA': '.ca',
+    'AU': '.com.au'
+}
