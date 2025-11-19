@@ -46,6 +46,7 @@ def amazon_redirect(request):
         print('STEP 5')
         location_data = json.loads(response.text)
         print('STEP 6')
+        print(location_data)
         country_code2 = location_data['location']['country_code2']
 
         tld = '.com'
