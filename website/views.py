@@ -43,15 +43,17 @@ def amazon_redirect(request):
         headers = {}
         
         response = requests.request("GET", url, headers=headers, data={})
+        print('STEP 5')
         location_data = json.loads(response.text)
+        print('STEP 6')
         country_code2 = location_data['location']['country_code2']
 
         tld = '.com'
-        print('STEP 5')
+        print('STEP 7')
 
         if country_code2 in TLDS:
             tld = TLDS[country_code2]
-        print('STEP 6')
+        print('STEP 8')
     
         target_url = f'https://www.amazon{tld}/dp/{ASIN}'
         return HttpResponseRedirect(target_url)
