@@ -14,6 +14,9 @@ def about(request):
 def book(request):
     return render(request, 'website/book.html')
 
+def donate(request):
+    return render(request, 'website/donate.html')
+
 def contact(request):
     if request.method == 'POST':
         form = request.POST
