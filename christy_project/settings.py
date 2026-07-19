@@ -27,7 +27,9 @@ ALLOWED_HOSTS = [
     'localhost', 
     '.herokuapp.com', 
     'christianacatherine.co.uk', 
-    'www.christianacatherine.co.uk'
+    'www.christianacatherine.co.uk',
+    'christiana-catherine.co.uk', 
+    'www.christiana-catherine.co.uk'
     ]
 
 
